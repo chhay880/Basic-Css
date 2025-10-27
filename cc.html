@@ -82,7 +82,103 @@
             font-style:italic;
             font-size:10px;
          }
+         p{
+            background-color: red;
+         }
+         p:hover{
+            background-color: yellowgreen;
+         }
+         .cat
+         {
+            position:absolute;
+            z-index:11;
+            background-color: yellow;
+         }
+         .dog{
+            z-index:21;
+            float:right;
+            background-color: red;
+         }
+         .cow{
+            z-index:2;
+            text-align: center;
+            opacity:calc();
+            background-color: rgb(0, 255, 89);
+         }
+         .rundiv{
+            display:flex;
+         }
+         .first-div{
+            height:300px;
+            overflow:scroll;
+            box-shadow: 2px 4px 7px green      
+        }
+        .second-div{
+            height:100px;
+            overflow:scroll;      
+        }
+        .third-div{
+            height:200px;
+            overflow:scroll;      
+        }
+        .anime{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: chhaya;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+            @keyframes chhaya {
+                0%{
+                    background-color: red;
+                    left: 0px;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                }
+                25%{
+                    background-color: yellow;
+                    left: 250px;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                }
+                50%{
+                    background-color: rgb(87, 240, 87);
+                    left: 250px;
+                    right: 0px;
+                    top: 250px;
+                    bottom: 0px;
+                }
+                75%{
+                    background-color: yellow;
+                    left: 0px;
+                    right: 0px;
+                    top: 250px;
+                    bottom: 0px;
+                }
+                100%{
+                    background-color: rgb(255, 0, 191);
+                    left: 0px;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                }
 
+            }
+            .trans{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(21, 239, 141);
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+            }
+            .trans:hover{
+                width: 500px;
+            }
     </style>
 </head>
 <body>
@@ -98,9 +194,46 @@
     <div class ="runCss"> Running CSS</div>
     <br>
     <i>vfgh</i>
-    <i class="fas fa-cloud"></i>
-    <i class="fas fa-car"></i>
-    <i class="fas fa-heart"></i>
-
+    <i class="fas fa-cloud" style="color: blue;"></i>
+    <i class="fas fa-car" style="color: green;"></i>
+    <i class="fas fa-heart" style="color: red;"></i>
+    <p>
+        This is hovering CSS.
+    </p>
+    <section class="cat">
+        my cat is black and white
+        </section>
+        <section class="dog">
+        my dog is white        </section>
+        <section class="cow">
+        my cow is brown and white color.
+    </section>
+    <div class="rundiv">
+        <div class="first-div">
+            first div tag
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum delectus corrupti ullam facilis eveniet in atque sit, numquam, enim asperiores officiis fugiat? Earum maiores, similique incidunt recusandae delectus debitis nam?
+        </div>
+        <div class="second-div">
+            second div tag
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi, sapiente inventore quo reprehenderit neque itaque asperiores magni perferendis expedita qui aliquam sit voluptatum ad modi? Vitae quos ipsum rem.
+        </div>
+         <div class="third-div">
+            third div tag
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, maiores natus totam minus accusamus nulla pariatur, fugit debitis quibusdam repellendus libero adipisci cupiditate deserunt nemo similique, in est? Delectus, pariatur?
+        </div>
+    </div>
+    <br>
+    <br>
+    <nav>
+        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.yahoo.com">yahoo</a><br>
+        <a href="https://www.instagram.com">instagram</a><br>
+        <a href="https://www.whatsapp.com">whatsapp</a><br>
+    </nav>
+    <br>
+    <div class="anime"></div>
+    <br>
+    <div class="trans"></div>
+    
 </body>
 </html>
